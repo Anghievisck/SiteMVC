@@ -1,0 +1,106 @@
+﻿@model WebHealthy.Models.Usuario
+
+@{
+    ViewBag.Title = "Informações";
+}
+
+<h2>Informações do Usuário</h2>
+
+<div>
+    <h4>Seus dados:</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observação)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observação)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Idade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Altura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Altura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Senha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfSenha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfSenha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttFis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttFis)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
